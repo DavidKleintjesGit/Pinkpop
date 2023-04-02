@@ -1,0 +1,59 @@
+{
+    "album1" :
+    {
+        "id": 1,
+        "artist": "Kevin",
+        "title" : "Animal stories",
+        "tracks":
+            [
+                {
+                    "url": "kevin1.mp4",
+                    "title" : "Gordelweg",
+                    "duration" : "02:35"
+                },
+                {
+                    "url": "kevin4.mp4",
+                    "title" : "als ik je niet zie",
+                    "duration" : "03:18"
+                }
+            ]
+    },
+    "album2" :
+    {
+        "id": 2,
+        "artist": "Rafello",
+        "title" : "Forest Hills Drive",
+        "tracks":
+            [
+                {
+                    "url": "kevin2.mp4",
+                    "title" : "Dakje open",
+                    "duration" : "03:44"
+                },
+                {
+                    "url": "kevin4.mp4",
+                    "title" : "Tijdloos",
+                    "duration" : "03:33"
+                }
+            ]
+    },
+    "album3" :
+    {
+        "id": 3,
+        "artist": "rafello",
+        "title" : "Honkbalpoort",
+        "tracks":
+            [
+                {
+                    "url": "rafello1.mp4",
+                    "title" : "Honkbalpoort",
+                    "duration" : "03:19"
+                },
+                {
+                    "url": "rafello2.mp4",
+                    "title" : "In deze velden",
+                    "duration" : "02:29"
+                }
+            ]
+    }
+}
