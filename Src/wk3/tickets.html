@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<section class="section_nav">
+    <div class="container">
+        <div >
+            <h1 class="logo">
+                <a href="index.html">Pinkpop</a>
+            </h1>
+        </div>
+        <div>
+            <form action="tickets.html">
+                <button class="tickets_button">
+                    tickets
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="tickets">
+    <h1><bold>Tickets:</bold></h1>
+    <h5>Hieronder vind je de prijzen van de kaartjes</h5>
+    <ul>
+        <li onclick="addItem('Zaterdag dag-ticket', 1, 110)">Zaterdag: $110</li>
+        <li onclick="addItem('Zondag dag-ticket', 1, 110)">Zondag: $110</li>
+        <li onclick="addItem('Maandag dag-ticket', 1, 110)">Maandag: $110</li>
+        <li onclick="addItem('Weekend-ticket', 1, 230)">Weekend: $230</li>
+    </ul>
+    <ul id="bestelling"></ul>
+    <button onclick="emptyCart()">Leeg winkelwagen</button>
+    <h4>Terug naar de pagina met het <a href="index.html">programma</a></h4>
+
+</section>
+<footer>
+    <div class="containerFooter">
+        <h4>Aan informatie op deze site kunnen geen rechten worden ontleend.</h4>
+        <p>© Buro Pinkpop, Geleen </p>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    showCart();
+</script>
