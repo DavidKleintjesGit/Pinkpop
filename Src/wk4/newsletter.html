@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<section class="section_nav">
+    <div class="container">
+        <div >
+            <h1 class="logo">
+                <a href="index.html">Pinkpop</a>
+            </h1>
+        </div>
+        <div>
+            <form action="tickets.html">
+                <button class="tickets_button">
+                    tickets
+                </button>
+            </form>
+            <div class="nav-flexbox">
+                <ul>
+                    <a href="newsletter.html"><li>Newsletter</li></a>
+                    <a href="jukebox.html"><li>Jukebox</li></a>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter">
+    <h1><bold>Newsletter:</bold></h1>
+    <form id="emailForm">
+        <label>Email</label>
+        <input name="userEmail" type="text" required><br>
+        <label>Frequency</label>
+        <select name="freq">
+          <option value="monthly">Maandelijks</option>
+          <option value="quarterly">Per kwartaal</option>
+          <option value="yearly">Jaarlijks</option>
+        </select><br>
+        <input name="privacyAgreement" type="checkbox">
+        <label>Acepteer de privacy voorwaarden</label><br>
+        <input value="Submit" type="submit">
+      </form>
+      
+
+</section>
+<footer>
+    <div class="containerFooter">
+        <h4>Aan informatie op deze site kunnen geen rechten worden ontleend.</h4>
+        <p>© Buro Pinkpop, Geleen </p>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+const emailForm = document.getElementById('emailForm');
+emailForm.addEventListener('submit', (submit) => {
+submit.preventDefault();
+  const agreedToPrivacy = emailForm.privacyAgreement.checked;
+  const userEmail = emailForm.userEmail.value;
+
+  if (!agreedToPrivacy) {
+    alert('Accepteer aub de privacy voorwaaden.');
+  } else {
+    alert(`Email verstuurd naar ${userEmail}.`);
+  }
+});
+
+</script>

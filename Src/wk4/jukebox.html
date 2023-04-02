@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<section class="section_nav">
+    <div class="container">
+        <div >
+            <h1 class="logo">
+                <a href="index.html">Pinkpop</a>
+            </h1>
+        </div>
+        <div>
+            <form action="tickets.html">
+                <button class="tickets_button">
+                    tickets
+                </button>
+            </form>
+            <div class="nav-flexbox">
+                <ul>
+                    <a href="newsletter.html"><li>Newsletter</li></a>
+                    <a href="jukebox.html"><li>Jukebox</li></a>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="jukebox">
+    <h1><bold>Jukebox:</bold></h1>
+    <form id="previewForm">
+        <label>Artiesten:</label>
+        <select name="artistList" id="artistList" onchange="updateTracks()">
+          <option value="">Selecteer een artiest</option>
+          <option value="kevin">Kevin</option>
+          <option value="rafello">Rafello</option>
+        </select><br>
+        <label>Tracks:</label>
+        <select name="trackList" id="trackList" onchange="displayTrack()">
+          <option value="">Selecteer een track</option>
+        </select>
+      </form>
+      
+      <video width="100%" height="100%" controls id="videoPlayer">
+      </video>
+</section>
+<footer>
+    <div class="containerFooter">
+        <h4>Aan informatie op deze site kunnen geen rechten worden ontleend.</h4>
+        <p>© Buro Pinkpop, Geleen </p>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+</script>
